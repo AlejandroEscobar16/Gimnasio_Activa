@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.body{
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    width: 100%;
+    height: 600px;
+    max-width: 1500px;
+    padding:5px;
+    /*background-color: blue;*/
+    display: grid;
+    gap: 5px;
+        grid-template-areas:
+        'header header header header header'
+        'main main main main aside'
+        'main main main main aside'
+        'main main main main aside'
+        'footer footer footer footer footer';
+}
+
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+.main{
+    background-color: brown;
+    grid-area: main;
+}
+
+.aside{
+    background-color:chocolate;
+    grid-area: aside;
+}
+
+.footer{
+    background-color: indigo;
+    grid-area: footer;
+}
+
+
+@media (max-width:800px) {
+    .body{
+        grid-template-areas:
+        'header header header header header'
+        'main main main main main'
+        'main main main main main'
+        'aside aside aside aside aside'
+        'footer footer footer footer footer';
+}
+    
+}

@@ -38,8 +38,24 @@
 }
 
 .footer{
-    background-color: indigo;
+    background-color: #000;
     grid-area: footer;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+.footer .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 20px 10px;
+    transition: 0.5s;
+}
+
+
+.footer .redes a:hover {
+    color: #f31506;
 }
 
 
@@ -51,6 +67,5 @@
         'main main main main main'
         'aside aside aside aside aside'
         'footer footer footer footer footer';
-}
-    
+    }
 }

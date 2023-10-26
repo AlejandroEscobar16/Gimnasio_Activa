@@ -15,8 +15,8 @@ const mostrarData = (data) => {
         <div class="tarjeta">
             <img src="${data[i].image}" alt="foto">
                 <div class="textocard">
-                    <h2>${data[i].species}</h2>
-                    <p>${data[i].name}</p>
+                    <h2>${data[i].name}</h2>
+                    <p>${data[i].species}</p>
                     <p>${data[i].gender}</p>
                     <p>${data[i].origin["name"]}</p>
                     <button onclick="GuadarLocalStorage(${data[i].name})">Agregar Carrito</button>

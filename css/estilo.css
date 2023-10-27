@@ -11,9 +11,10 @@
     background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
     width: 100%;
     height: 600px;
-    max-width: 1500px;
+    /*max-width: 1500px;*/
     padding:5px;
     /*background-color: blue;*/
+    
     display: grid;
     gap: 5px;
         grid-template-areas:
@@ -32,10 +33,47 @@ header{
     background: linear-gradient(hsl(320, 84%, 56%),#291629) ;
     grid-area: header;
 }
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8a688bd8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-field {
+    margin-bottom: 10px;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cc87c3;
+    border-radius: 5px;
+  }
+  
+  .form-field textarea {
+    height: 100px;
+  }
+  
+  /* Estilos para centrar el botón */
+  .form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-button{
+/*button{
     cursor: pointer;
-}
+}*/
 
 /*carrusel*/
 
@@ -61,24 +99,31 @@ button{
   min-height: 95vh;
 }
 
-
 .tarjeta {
-    width: 200px;
+    width: 250px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 0 10px #727272;
     margin: 15px;
+      
 }
 
 .tarjeta img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
-.tarjeta button{
+.tarjeta button {
     cursor: pointer;
+    background-color: #291629;
+    color: #ecb6cf;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0; /* Añade margen superior al botón */
 }
 .textocard {
     padding: 10px;
+  
 }
 
 .tarjeta a {
@@ -87,10 +132,9 @@ button{
     text-decoration: none;
     background-color: dimgray;
     padding: 5px;
-    margin: px;
+    margin: 5px 0;
     border-radius: 10px;
-    display: inline-block;
-
+    
 }
 
 .contenedor p {
@@ -108,7 +152,6 @@ button{
     background-color: #291629;
     text-align: center;
     color: #ecb6cf;
-   
     grid-area: footer;
     text-align: center;
     padding: 40px 0px 0px;
